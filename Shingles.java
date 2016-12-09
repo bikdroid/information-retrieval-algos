@@ -111,7 +111,7 @@ public class Shingles {
 		// Similarity between Class Vectors
 		sim = (double) intersection / (double) union;
 		System.out.println("\nSimilarity between Class Vectors (Jaccard) : " + sim);
-
+		//Row Hashing - one-pass implementation. 
 		double[][] rowHashes = new double[14][2];
 		double inf = Double.POSITIVE_INFINITY;
 		for (int k = 0; k < shingles.length; k++) {
@@ -184,12 +184,12 @@ public class Shingles {
 
 	}
 
-	public static double hash_h(int x) {
+	public static double hash_h(int x) { // Hash function 1
 		double hash = (x + 1) % 5;
 		return hash;
 	}
 
-	public static double hash_g(int x) {
+	public static double hash_g(int x) { // Hash function 2.
 		double hash = (x + 2) % 5;
 		return hash;
 	}
