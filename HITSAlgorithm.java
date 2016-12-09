@@ -8,7 +8,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
+/*
 
+Inspired from :
+
+https://github.com/evandempsey/document-summarizer/blob/master/DocumentSummarizer/src/docsum/algorithm/HITSAlgorithm.java
+
+
+*/
 public class HITSAlgorithm {
 
 	public HITSAlgorithm() {
